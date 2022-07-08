@@ -1,851 +1,109 @@
 <!DOCTYPE html>
 <html
   lang="en"
-  class="light-style layout-menu-fixed"
+  class="light-style customizer-hide"
   dir="ltr"
   data-theme="theme-default"
   data-assets-path="assets/"
-  data-template="vertical-menu-template-free" 
-  >
+  data-template="vertical-menu-template-free"
+>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
-    <title>Dashboard &mdash; Network Monitoring Telkomsel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Login &mdash; Network Monitoring Telkomsel</title>
     <meta name="description" content="" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon/Telkomsel_2021_icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+
     <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css" />
     <link rel="stylesheet" href="assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="assets/css/demo.css" />
     <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-    <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="assets/vendor/css/pages/page-auth.css" />
     <script src="assets/vendor/js/helpers.js"></script>
     <script src="assets/js/config.js"></script>
   </head>
 
   <body>
-    <div class="layout-wrapper layout-content-navbar">
-      <div class="layout-container">
-
-        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-          <div class="app-brand demo">
-            <a href="index.html" class="app-brand-link">
-              <span class="app-brand-text demo menu-text fw-bolder ms-2">Telkomsel</span>
-            </a>
-          </div>
-
-          <div class="menu-inner-shadow"></div>
-
-          <ul class="menu-inner py-1">
-            <li class="menu-item active">
-              <a href="index.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                <div data-i18n="Analytics">Dashboard</div>
-              </a>
-            </li>
-
-            <li class="menu-item open">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <!-- <i class="menu-icon tf-icons bx bx-layout"></i> -->
-                <i class="menu-icon">📍</i>
-                <div data-i18n="Layouts">Locations</div>
-              </a>
-
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="ki-batang.html" class="menu-link">
-                    <div data-i18n="Without menu">KI Batang</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="ki-kendal.html" class="menu-link">
-                    <div data-i18n="Without navbar">KI Kendal</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="ki-wijaya-kusuma.html" class="menu-link">
-                    <div data-i18n="Container">KI Wijaya Kusuma</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="ki-tambak-aji.html" class="menu-link">
-                    <div data-i18n="Fluid">KI Tambak Aji</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="ki-candi.html" class="menu-link">
-                    <div data-i18n="Blank">KI Candi</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="ki-bsb.html" class="menu-link">
-                    <div data-i18n="Blank">KI Bukit Semarang Baru</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="ki-terboyo-park.html" class="menu-link">
-                    <div data-i18n="Blank">KI Terboyo Park</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="ki-terboyo-megah.html" class="menu-link">
-                    <div data-i18n="Blank">KI Terboyo Megah</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="lik-bugangan.html" class="menu-link">
-                    <div data-i18n="Blank">LIK Bugangan</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="ki-tanjung-mas.html" class="menu-link">
-                    <div data-i18n="Blank">KI Tanjung Mas</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="ki-sinar-sentra-cipta.html" class="menu-link">
-                    <div data-i18n="Blank">KI Sinar Sentra Cipta</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="ki-sayung.html" class="menu-link">
-                    <div data-i18n="Blank">KI Sayung</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu-item">
-              <a href="setting.html" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
-                <div data-i18n="Account Settings">Settings</div>
-              </a>
-            </li>
-          </ul>
-        </aside>
-
-        <div class="layout-page">
-          <nav
-            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
-            id="layout-navbar"
-          >
-            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-                <i class="bx bx-menu bx-sm"></i>
-              </a>
-            </div>
-
-            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-             <h2 class="align-items-center fs-3 md-4 mt-3">NETWORK MONITORING DASHBOARD</h2>
-              <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <li class="nav-item lh-1 me-3">
-                  <p style="margin:auto;">10 March 2022 10.00</p>
-                </li>
-                <li class="nav-item lh-1 me-3">
-                  <p style="margin:auto;">Hi, Joko</p>
-                </li>
-                <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <div class="avatar avatar-online">
-                      <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
-                            <div class="avatar avatar-online">
-                              <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
-                            </div>
-                          </div>
-                          <div class="flex-grow-1">
-                            <span class="fw-semibold d-block">John Doe</span>
-                            <small class="text-muted">Admin</small>
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <div class="dropdown-divider"></div>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="setting.html">
-                        <i class="bx bx-cog me-2"></i>
-                        <span class="align-middle">Settings</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="auth-login-basic.html">
-                        <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Log Out</span>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </nav>
-
-          <div class="content-wrapper">
-            <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold">EXECUTIVE SUMMARY</h4>
-              <div class="row">
-                <div class="col-lg-6 order-1">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI BATANG</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI KENDAL</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 order-3 order-md-2">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI WIJAYA KUSUMA</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                     <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI TANJUNG MAS</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 order-3 order-md-2">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI TERBOYO PARK</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                     <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI CANDI</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 order-3 order-md-2">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI BUKIT SEMARANG BARU</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                     <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI TAMBAK AJI</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 order-3 order-md-2">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI TERBOYO MEGAH</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                     <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">lIK BUGANGAN</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 order-3 order-md-2">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI SAYUNG</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                     <div class="col-lg-6 col-md-12 col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <span class="badge bg-danger">KI SINAR SENTRA CIPTA</span>
-                            </div>
-                            <div class="dropdown">
-                              <button
-                                class="btn p-0"
-                                type="button"
-                                id="cardOpt3"
-                                data-bs-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                              >
-                                <i class="bx bx-dots-vertical-rounded"></i>
-                              </button>
-                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
-                                <a class="dropdown-item" href="javascript:void(0);">Show</a>
-                                <a class="dropdown-item" href="javascript:void(0);">Print</a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Traffic</span>
-                                <h6 class="text-success card-title mb-2"><i class="bx bx-up-arrow-alt"></i>(ERL)0,76</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">Payload</span>
-                                <h6 class="text-danger card-title mb-2"><i class="bx bx-down-arrow-alt"></i>(MB)-1,51</h6>
-                              </div>
-                            </div>
-                            <br>
-                            <div class="col-lg">
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,83%</h6>
-                              </div>
-                              <div class="g-col-6">
-                                <span class="fw-semibold d-block mb-1">CSSR</span>
-                                <h6 class="text-info card-title mb-2">99,37%</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+    <div class="container-xxl">
+      <div class="authentication-wrapper authentication-basic container-p-y">
+        <div class="authentication-inner">
+          <div class="card">
+            <div class="card-body">
+              <div class="app-brand justify-content-center">
+                <a href="index.html" class="app-brand-link gap-2">
+                  <span class="app-brand-logo demo">
+                    <img src="assets/img/favicon/Telkomsel_2021_icon.png" alt="" style="width: 5%;">
+                  </span>
+                </a>
               </div>
-            </div>
-            </div>
-            <footer class="content-footer footer bg-footer-theme">
-              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
-                <div class="mb-2 mb-md-0">
-                  ©
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  , made with ❤️ by InternTelkomsel 
+              <h4 class="mb-2">Halo, Selamat datang! 👋</h4>
+              <p class="mb-4">Silahkan masuk untuk memulai aktivitas</p>
+
+              <form id="formAuthentication" class="mb-3" action="index.html" method="POST">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email atau Username</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email-username"
+                    placeholder="Masukan email atau username"
+                    autofocus
+                  />
                 </div>
-              </div>
-            </footer>
-            <div class="content-backdrop fade"></div>
+                <div class="mb-3 form-password-toggle">
+                  <div class="d-flex justify-content-between">
+                    <label class="form-label" for="password">Password</label>
+                    <a href="#">
+                      <small>Lupa Password?</small>
+                    </a>
+                  </div>
+                  <div class="input-group input-group-merge">
+                    <input
+                      type="password"
+                      id="password"
+                      class="form-control"
+                      name="password"
+                      placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                      aria-describedby="password"
+                    />
+                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="remember-me" />
+                    <label class="form-check-label" for="remember-me"> Ingat saya </label>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <button class="btn btn-danger d-grid w-100" type="submit"><a href="dashboard.html" style="color: white;">Masuk</a></button>
+                </div>
+              </form>
+
+              <p class="text-center">
+                <span>Ingin memulai aktivitas?</span>
+                <a href="#">
+                  <span>Silahkan buat akun!</span>
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="layout-overlay layout-menu-toggle"></div>
     </div>
 
     <script src="assets/vendor/libs/jquery/jquery.js"></script>
     <script src="assets/vendor/libs/popper/popper.js"></script>
     <script src="assets/vendor/js/bootstrap.js"></script>
     <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
     <script src="assets/vendor/js/menu.js"></script>
-    <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/dashboards-analytics.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
